@@ -1,0 +1,35 @@
+<div class="main-container">
+  <div class="header"></div>
+
+  <div class="display">
+    <div class="upper-display">
+      <div class="upper-display-result">{{ result() }}</div>
+      <div class="upper-display-operator">{{ operator() }}</div>
+    </div>
+    <div class="lower-display">{{ operand() }}</div>
+  </div>
+
+  <div class="keyboard">
+    <div class="numeric-pad">
+      <div id="button-7" class="calc-button" (click)="setOperand('7')">7</div>
+      <div id="button-8" class="calc-button" (click)="setOperand('8')">8</div>
+      <div id="button-9" class="calc-button" (click)="setOperand('9')">9</div>
+      <div id="button-4" class="calc-button" (click)="setOperand('4')">4</div>
+      <div id="button-5" class="calc-button" (click)="setOperand('5')">5</div>
+      <div id="button-6" class="calc-button" (click)="setOperand('6')">6</div>
+      <div id="button-1" class="calc-button" (click)="setOperand('1')">1</div>
+      <div id="button-2" class="calc-button" (click)="setOperand('2')">2</div>
+      <div id="button-3" class="calc-button" (click)="setOperand('3')">3</div>
+      <div id="button-0" class="calc-button" (click)="setOperand('0')">0</div>
+      <div id="button-decimal" class="calc-button" (click)="setOperand('.')">.</div>
+      <div id="button-equal" class="calc-button">=</div>
+    </div>
+
+    <div class="operator-pad">
+      <div id="button-divide" class="calc-button" (click)="setOperator('÷')">÷</div>
+      <div id="button-multiply" class="calc-button" (click)="setOperator('x')">x</div>
+      <div id="button-subtract" class="calc-button" (click)="setOperator('-')">-</div>
+      <div id="button-add" class="calc-button" (click)="setOperator('+')">+</div>
+    </div>
+  </div>
+</div>
